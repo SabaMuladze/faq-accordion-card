@@ -15,8 +15,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-it was new experience for me because iam new in js.
-
+This was a new experience for me as I am new to js.
 ### The challenge
 
 Users should be able to:

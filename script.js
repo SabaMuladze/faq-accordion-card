@@ -9,12 +9,24 @@ boxes.forEach((item) => {
     item.addEventListener('click', (e) => {
 
 
+        if (item.classList.contains('active')) {
+
+            item.classList.add('active');
+
+            label.forEach((lbl) => {
+                lbl.classList.remove('label-border');
+            });
+
+        } else {
+            boxes.forEach(list => {
+                list.classList.remove('active')
+            })
+            label.forEach((lbl) => {
+                lbl.classList.add('label-border');
+            });
+        }
+
         item.classList.toggle('active');
-
-        label.forEach((lbl) => {
-            lbl.classList.toggle('label-border');
-        });
-
     });
 
 

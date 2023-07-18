@@ -22,7 +22,7 @@ button {
     border: none;
     outline: none;
     background-color: #FFFFFF;
-    font-size: 1rem;
+    font-size: 13px;
     color: #4B4C5F;
 
 }
@@ -80,7 +80,7 @@ main {
     padding: 15vh 1.5rem 3rem 1.5rem;
     position: relative;
     display: flex;
-    min-height: 60vh;
+    height: 535px;
     flex-direction: column;
     align-items: center;
     z-index: 5;
@@ -116,7 +116,7 @@ main {
 }
 
 .content p {
-    font-size: 14px;
+    font-size: 12px;
     color: #787887;
     line-height: 18px;
     text-align: center;
@@ -153,4 +153,8 @@ svg {
 
 .active button {
     font-weight: 700;
+}
+
+.box.unactive .content {
+    display: none;
 }
