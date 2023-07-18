@@ -1,0 +1,126 @@
+@media (min-width:768px) {
+
+    p {
+        font-size: 1rem;
+    }
+
+    .main-cont::after {
+        width: 267px;
+        height: 210px;
+
+    }
+
+    .main-cont::before {
+        width: 270px;
+        height: 175px;
+
+    }
+
+    .box.active .content {
+        min-height: 3.5vh;
+
+    }
+
+}
+
+@media (min-width:1300px) {
+
+    .boxes {
+        width: 50%;
+        align-self: flex-end;
+    }
+
+    main {
+        margin: 0rem;
+
+    }
+
+    .main-cont {
+        margin: 4rem 15rem 0 17.5rem;
+        padding: 10vh 5rem 3rem 5rem;
+        overflow: hidden;
+    }
+
+    .main-cont::after {
+        content: ' ';
+        background-image: url(images/illustration-woman-online-desktop.svg);
+        position: absolute;
+        top: 70px;
+        left: -88px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 472px;
+        height: 360px;
+
+    }
+
+    .label button:hover {
+        color: #F47B56;
+        cursor: pointer;
+    }
+
+
+    .main-cont::before {
+        content: ' ';
+        background-image: url(images/bg-pattern-desktop.svg);
+        position: absolute;
+        top: -200px;
+        left: -425px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 12%;
+        width: 964px;
+        height: 568px;
+        z-index: 0;
+
+
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .header {
+        width: 50%;
+        align-self: flex-end;
+        text-align: start;
+    }
+
+    .content p {
+        text-align: start;
+        padding: 0 0 1rem 0;
+    }
+
+    .img-box {
+        position: absolute;
+        left: -70px;
+        top: 265px;
+        z-index: 15;
+        animation: anim 3s ease;
+        animation-iteration-count: infinite;
+        display: block;
+    }
+
+
+
+
+    @keyframes anim {
+
+        0% {
+            transform: translateY(0px);
+        }
+
+
+        50% {
+            transform: translateY(5px);
+        }
+
+        100% {
+            transform: translateY(0px);
+
+        }
+    }
+}
